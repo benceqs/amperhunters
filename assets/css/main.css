@@ -930,7 +930,7 @@ section {
   inset: 0;
   z-index: 3;
   transition: all ease-in-out 0.3s;
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0.15);
   padding: 15px;
 }
 
