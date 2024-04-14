@@ -54,7 +54,7 @@
       
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a href="#">Kezdőlap</a></li> <!-- class="active" -->
+          <li><a href="#kezdolap" class="active">Kezdőlap</a></li> <!-- class="active" -->
           <li><a href="#szolgaltatasok">Szolgáltatások</a></li>
           <li><a href="#rolunk">Rólunk</a></li>
           <li><a href="#projektek">Projektek</a></li>
@@ -85,7 +85,7 @@
   </header><!-- End Header -->
 
   <!-- ======= Hero Section ======= -->
-  <section id="hero" class="hero">
+  <section id="kezdolap" class="hero">
 
     <div class="info d-flex align-items-center">
       <div class="container">
@@ -157,7 +157,7 @@
                   preserveAspectRatio="xMidYMid meet">
 
                   <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)"
-                  fill="#000000" stroke="none">
+                  fill="#0D395A" stroke="none">
                   <path fill="#0D395A" d="M570 4835 c-285 -78 -459 -359 -399 -647 40 -192 203 -363 395 -412
                   77 -20 202 -20 274 -1 172 46 319 176 376 334 l18 51 263 0 263 0 0 -725 0
                   -725 -264 0 -264 0 -12 38 c-40 124 -150 245 -279 308 -345 166 -753 -72 -778
@@ -207,7 +207,7 @@
                 <i class="fa-brands fa-searchengin"></i>
               </div>
               <h3>Hibakeresés és hibaelhárítás</h3>
-              <p>Villamos hálózat felülvizsgálása</p>
+              <p>Villamos hálózat felülvizsgálása, felmerülő problémák megoldása</p>
             </div>
           </div><!-- End Service Item -->
 
@@ -574,6 +574,35 @@
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <script>
+    document.addEventListener("scroll", function() {
+  var scrollPosition = window.scrollY;
+
+  // Ellenőrizzük, hogy melyik szakasz van a legközelebb a felső részhez
+  var sections = document.querySelectorAll("section"); // Vagy bármilyen más elem, amelyek az oldal szakaszait jelölik
+  var closestSectionId = "";
+  var closestSectionDistance = Infinity;
+
+  sections.forEach(function(section) {
+    var sectionTop = section.offsetTop;
+    var distance = Math.abs(scrollPosition - sectionTop);
+    if (distance < closestSectionDistance) {
+      closestSectionDistance = distance;
+      closestSectionId = section.id;
+    }
+  });
+
+  // Távolítsuk el az "active" class-t minden menüpontról
+  document.querySelectorAll("ul li a").forEach(function(link) {
+    link.classList.remove("active");
+  });
+
+  // Adjuk hozzá az "active" class-t az aktuális szakaszhoz tartozó menüponthoz
+  document.querySelector('a[href="#' + closestSectionId + '"]').classList.add("active");
+});
+
+  </script>
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
