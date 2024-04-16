@@ -974,6 +974,7 @@ section {
 }
 
 .about .about-img {
+  background-image: url(../img/about.jpg);
   min-height: 600px;
   background-size: cover;
   background-position: center;
@@ -1595,6 +1596,22 @@ section {
   background-color: rgba(0, 0, 0, 0.7);
   position: absolute;
   inset: 0;
+}
+
+.car-item-1{
+  background-image: url(../img/hero-carousel/hc-1.jpg);
+}
+.car-item-2{
+  background-image: url(../img/hero-carousel/hc-2.jpg);
+}
+.car-item-3{
+  background-image: url(../img/hero-carousel/hc-3.jpg);
+}
+.car-item-4{
+  background-image: url(../img/hero-carousel/hc-4.jpg);
+}
+.car-item-5{
+  background-image: url(../img/hero-carousel/hc-5.jpg);
 }
 
 .hero .info {
