@@ -1360,7 +1360,7 @@ section {
 --------------------------------------------------------------*/
 
 .contact-section{
-  margin-bottom: 10rem;
+  margin-bottom: 15rem;
 }
 
 .contact .info-item {
@@ -1372,9 +1372,9 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 56px;
-  height: 56px;
-  font-size: 24px;
+  width: 66px;
+  height: 66px;
+  font-size: 36px;
   line-height: 0;
   color: var(--color-primary);
 }
