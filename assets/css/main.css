@@ -1,17 +1,4 @@
-/*--------------------------------------------------------------
-# Set main reusable colors and fonts using CSS variables
-# Learn more about CSS variables at https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties
 
-#124b9b
-
-#0D395A - kék
-#CB7509 - narancs
-
-
-  --color-default: #364d59;
-  --color-primary: #feb900;
-  --color-secondary: #52565e;
---------------------------------------------------------------*/
 /* Fonts */
 :root {
   --font-default: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -29,6 +16,19 @@
 /* Smooth scroll behavior */
 :root {
   scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar {
+  width: 1em;
+}
+ 
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+ 
+body::-webkit-scrollbar-thumb {
+  background-color: var(--color-default);
+  outline: 1px solid color-pr
 }
 
 /*--------------------------------------------------------------
